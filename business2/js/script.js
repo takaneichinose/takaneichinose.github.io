@@ -3,6 +3,11 @@ $(function(){$("div.panel").hide();$(".menu").click(function(){$(this).toggleCla
 // 18.06.02 バックグラウンドで再生される音(イベント)
 var bgMusic = document.getElementById('bg_music');
 
+// 音を再生する
+setTimeout(function() {
+  bgMusic.play();
+}, 1);
+
 bgMusic.addEventListener('ended', function() {
   var content = document.getElementById('content');
   var footer  = document.getElementById('footer');
