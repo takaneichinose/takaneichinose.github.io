@@ -1,14 +1,14 @@
 $(function(){$("div.panel").hide();$(".menu").click(function(){$(this).toggleClass("menuOpen").next().slideToggle();});})
 
-// 18.06.02 バックグラウンドで再生される音(イベント)
+// 18.06.02 追加
 var bgMusic = document.getElementById('bg_music');
 
-// 音を再生する
-bgMusic.load();
+// 18.06.02 音を再生する
 bgMusic.addEventListener('canplaythrough', function() {
   bgMusic.play();
 }, false);
 
+// 18.06.02 バックグラウンドで再生される音(イベント)
 bgMusic.addEventListener('ended', function() {
   var content = document.getElementById('content');
   var footer  = document.getElementById('footer');
