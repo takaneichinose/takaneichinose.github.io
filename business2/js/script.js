@@ -5,9 +5,8 @@ var bgMusic = document.getElementById('bg_music');
 
 // 18.06.02 音を再生する
 bgMusic.addEventListener('canplaythrough', function() {
-  setTimeout(function() {
-    bgMusic.play();
-  }, 1);
+  bgMusic.load();
+  bgMusic.play();
 }, false);
 
 // 18.06.02 バックグラウンドで再生される音(イベント)
