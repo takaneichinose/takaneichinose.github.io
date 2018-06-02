@@ -2,7 +2,7 @@ $(function(){$("div.panel").hide();$(".menu").click(function(){$(this).toggleCla
 
 // 18.06.02 音を再生する
 function initializeAudio() {
-  var bgMusic = document.getElementById('bg_music');
+  // var bgMusic = document.getElementById('bg_music');
   
   /*
   bgMusic.load();
