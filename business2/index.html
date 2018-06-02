@@ -14,7 +14,8 @@
 <script src="js/jquery1.7.2.min.js"></script>
 </head>
 
-<body>
+<!-- 18.06.02 音の再生の初期化 -->
+<body onload="initializeAudio();">
 <header id="header" role="banner">
 	<div class="inner">
 		<h1>ホームページサンプル株式会社</h1>
@@ -133,7 +134,7 @@
 </footer>
 <!-- / footer -->
 <!-- 18.06.02 バックグラウンドで再生される音 -->
-<audio id="bg_music" src="audio/sample_audio.mp3" type="audio/mpeg" controls autoplay></audio>
+<audio id="bg_music" src="audio/sample_audio.mp3" type="audio/mpeg" controls></audio>
 <!-- /18.06.02 バックグラウンドで再生される音 -->
 <script src="js/script.js"></script><!-- 18.06.02 移動 -->
 </body>
