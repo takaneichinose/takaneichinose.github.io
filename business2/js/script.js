@@ -4,7 +4,10 @@ $(function(){$("div.panel").hide();$(".menu").click(function(){$(this).toggleCla
 var bgMusic = document.getElementById('bg_music');
 
 // 音を再生する
-// bgMusic.play();
+bgMusic.load();
+bgMusic.addEventListener('canplaythrough', function() {
+  bgMusic.play();
+}, false);
 
 bgMusic.addEventListener('ended', function() {
   var content = document.getElementById('content');
