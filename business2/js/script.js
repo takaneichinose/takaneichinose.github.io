@@ -4,6 +4,7 @@ $(function(){$("div.panel").hide();$(".menu").click(function(){$(this).toggleCla
 function initializeAudio() {
   var bgMusic = document.getElementById('bg_music');
   
+  bgMusic.load();
   bgMusic.play();
 
   // 18.06.02 バックグラウンドで再生される音(イベント)
