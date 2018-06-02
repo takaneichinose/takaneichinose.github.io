@@ -5,13 +5,10 @@ var bgMusic = document.getElementById('bg_music');
 
 // 18.06.02 音を再生する
 bgMusic.addEventListener('canplaythrough', function() {
-  alert('test');
-  bgMusic.play();
+  setTimeout(function() {
+    bgMusic.play();
+  }, 1);
 }, false);
-
-setTimeout(function() {
-  alert('test 2');
-}, 1);
 
 // 18.06.02 バックグラウンドで再生される音(イベント)
 bgMusic.addEventListener('ended', function() {
