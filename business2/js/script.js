@@ -4,9 +4,7 @@ $(function(){$("div.panel").hide();$(".menu").click(function(){$(this).toggleCla
 var bgMusic = document.getElementById('bg_music');
 
 // 音を再生する
-setTimeout(function() {
-  bgMusic.play();
-}, 1);
+// bgMusic.play();
 
 bgMusic.addEventListener('ended', function() {
   var content = document.getElementById('content');
