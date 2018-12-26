@@ -1,0 +1,662 @@
+@import url("https://fonts.googleapis.com/css?family=Varela+Round");
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 18px;
+}
+
+.container {
+  background-color: #cfcfcf;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .card {
+  border: solid 1px #0058a2;
+  margin: 20px;
+  overflow: hidden;
+  display: flex;
+  box-sizing: border-box;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+.container .card .card-header {
+  background-color: #229aff;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.container .card .card-header .image-container {
+  background-color: white;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  border-radius: 50%;
+  box-shadow: 0 -1px #0066bb;
+}
+.container .card .card-header h3, .container .card .card-header p {
+  color: #ffffff;
+  text-shadow: 0 -1px #0066bb;
+}
+.container .card .card-body {
+  color: #222222;
+  background-color: #ffffff;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.container .card .card-body .content {
+  margin-bottom: 15px;
+}
+.container .card .card-body .content h3, .container .card .card-body .content p {
+  margin: 0;
+}
+.container .card .card-body .content:last-child {
+  margin-bottom: 0;
+}
+
+.stat-box {
+  margin-bottom: 10px;
+}
+.stat-box h3 {
+  font-weight: normal;
+  margin: 0;
+}
+.stat-box:last-child {
+  margin-bottom: 0;
+}
+.stat-box .stat-label {
+  color: #222222;
+}
+.stat-box .stat-bar {
+  width: 100%;
+  height: 25px;
+  border: solid 2px #8f8f8f;
+  position: relative;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.stat-box .stat-bar:after {
+  content: '';
+  color: #ffffff;
+  text-align: center;
+  background-image: linear-gradient(to top right, #efd248 25%, #ebc619 25%, #ebc619 50%, #efd248 50%, #efd248 75%, #ebc619 75%);
+  background-size: 25px;
+  background-repeat: repeat-x;
+  background-position: 0;
+  width: 0;
+  height: 21px;
+  line-height: 23px;
+  position: absolute;
+  text-shadow: 0 -1px #d8b513;
+  transition: width 1s ease-out;
+}
+
+.my-accounts {
+  font-size: 32px;
+}
+.my-accounts a {
+  margin-right: 10px;
+}
+
+.acct-twitter {
+  color: #1c9ceb;
+}
+.acct-twitter:hover {
+  color: #4bb0ef;
+}
+
+.acct-facebook {
+  color: #395694;
+}
+.acct-facebook:hover {
+  color: #486cb8;
+}
+
+.acct-google-plus {
+  color: #d64937;
+}
+.acct-google-plus:hover {
+  color: #df7061;
+}
+
+.acct-github {
+  color: #24292e;
+}
+.acct-github:hover {
+  color: #3a434b;
+}
+
+.acct-codepen {
+  color: #231f20;
+}
+.acct-codepen:hover {
+  color: #3e3739;
+}
+
+.stat-bar.stat-1:after {
+  content: "1%";
+  width: 1%;
+}
+
+.stat-bar.stat-2:after {
+  content: "2%";
+  width: 2%;
+}
+
+.stat-bar.stat-3:after {
+  content: "3%";
+  width: 3%;
+}
+
+.stat-bar.stat-4:after {
+  content: "4%";
+  width: 4%;
+}
+
+.stat-bar.stat-5:after {
+  content: "5%";
+  width: 5%;
+}
+
+.stat-bar.stat-6:after {
+  content: "6%";
+  width: 6%;
+}
+
+.stat-bar.stat-7:after {
+  content: "7%";
+  width: 7%;
+}
+
+.stat-bar.stat-8:after {
+  content: "8%";
+  width: 8%;
+}
+
+.stat-bar.stat-9:after {
+  content: "9%";
+  width: 9%;
+}
+
+.stat-bar.stat-10:after {
+  content: "10%";
+  width: 10%;
+}
+
+.stat-bar.stat-11:after {
+  content: "11%";
+  width: 11%;
+}
+
+.stat-bar.stat-12:after {
+  content: "12%";
+  width: 12%;
+}
+
+.stat-bar.stat-13:after {
+  content: "13%";
+  width: 13%;
+}
+
+.stat-bar.stat-14:after {
+  content: "14%";
+  width: 14%;
+}
+
+.stat-bar.stat-15:after {
+  content: "15%";
+  width: 15%;
+}
+
+.stat-bar.stat-16:after {
+  content: "16%";
+  width: 16%;
+}
+
+.stat-bar.stat-17:after {
+  content: "17%";
+  width: 17%;
+}
+
+.stat-bar.stat-18:after {
+  content: "18%";
+  width: 18%;
+}
+
+.stat-bar.stat-19:after {
+  content: "19%";
+  width: 19%;
+}
+
+.stat-bar.stat-20:after {
+  content: "20%";
+  width: 20%;
+}
+
+.stat-bar.stat-21:after {
+  content: "21%";
+  width: 21%;
+}
+
+.stat-bar.stat-22:after {
+  content: "22%";
+  width: 22%;
+}
+
+.stat-bar.stat-23:after {
+  content: "23%";
+  width: 23%;
+}
+
+.stat-bar.stat-24:after {
+  content: "24%";
+  width: 24%;
+}
+
+.stat-bar.stat-25:after {
+  content: "25%";
+  width: 25%;
+}
+
+.stat-bar.stat-26:after {
+  content: "26%";
+  width: 26%;
+}
+
+.stat-bar.stat-27:after {
+  content: "27%";
+  width: 27%;
+}
+
+.stat-bar.stat-28:after {
+  content: "28%";
+  width: 28%;
+}
+
+.stat-bar.stat-29:after {
+  content: "29%";
+  width: 29%;
+}
+
+.stat-bar.stat-30:after {
+  content: "30%";
+  width: 30%;
+}
+
+.stat-bar.stat-31:after {
+  content: "31%";
+  width: 31%;
+}
+
+.stat-bar.stat-32:after {
+  content: "32%";
+  width: 32%;
+}
+
+.stat-bar.stat-33:after {
+  content: "33%";
+  width: 33%;
+}
+
+.stat-bar.stat-34:after {
+  content: "34%";
+  width: 34%;
+}
+
+.stat-bar.stat-35:after {
+  content: "35%";
+  width: 35%;
+}
+
+.stat-bar.stat-36:after {
+  content: "36%";
+  width: 36%;
+}
+
+.stat-bar.stat-37:after {
+  content: "37%";
+  width: 37%;
+}
+
+.stat-bar.stat-38:after {
+  content: "38%";
+  width: 38%;
+}
+
+.stat-bar.stat-39:after {
+  content: "39%";
+  width: 39%;
+}
+
+.stat-bar.stat-40:after {
+  content: "40%";
+  width: 40%;
+}
+
+.stat-bar.stat-41:after {
+  content: "41%";
+  width: 41%;
+}
+
+.stat-bar.stat-42:after {
+  content: "42%";
+  width: 42%;
+}
+
+.stat-bar.stat-43:after {
+  content: "43%";
+  width: 43%;
+}
+
+.stat-bar.stat-44:after {
+  content: "44%";
+  width: 44%;
+}
+
+.stat-bar.stat-45:after {
+  content: "45%";
+  width: 45%;
+}
+
+.stat-bar.stat-46:after {
+  content: "46%";
+  width: 46%;
+}
+
+.stat-bar.stat-47:after {
+  content: "47%";
+  width: 47%;
+}
+
+.stat-bar.stat-48:after {
+  content: "48%";
+  width: 48%;
+}
+
+.stat-bar.stat-49:after {
+  content: "49%";
+  width: 49%;
+}
+
+.stat-bar.stat-50:after {
+  content: "50%";
+  width: 50%;
+}
+
+.stat-bar.stat-51:after {
+  content: "51%";
+  width: 51%;
+}
+
+.stat-bar.stat-52:after {
+  content: "52%";
+  width: 52%;
+}
+
+.stat-bar.stat-53:after {
+  content: "53%";
+  width: 53%;
+}
+
+.stat-bar.stat-54:after {
+  content: "54%";
+  width: 54%;
+}
+
+.stat-bar.stat-55:after {
+  content: "55%";
+  width: 55%;
+}
+
+.stat-bar.stat-56:after {
+  content: "56%";
+  width: 56%;
+}
+
+.stat-bar.stat-57:after {
+  content: "57%";
+  width: 57%;
+}
+
+.stat-bar.stat-58:after {
+  content: "58%";
+  width: 58%;
+}
+
+.stat-bar.stat-59:after {
+  content: "59%";
+  width: 59%;
+}
+
+.stat-bar.stat-60:after {
+  content: "60%";
+  width: 60%;
+}
+
+.stat-bar.stat-61:after {
+  content: "61%";
+  width: 61%;
+}
+
+.stat-bar.stat-62:after {
+  content: "62%";
+  width: 62%;
+}
+
+.stat-bar.stat-63:after {
+  content: "63%";
+  width: 63%;
+}
+
+.stat-bar.stat-64:after {
+  content: "64%";
+  width: 64%;
+}
+
+.stat-bar.stat-65:after {
+  content: "65%";
+  width: 65%;
+}
+
+.stat-bar.stat-66:after {
+  content: "66%";
+  width: 66%;
+}
+
+.stat-bar.stat-67:after {
+  content: "67%";
+  width: 67%;
+}
+
+.stat-bar.stat-68:after {
+  content: "68%";
+  width: 68%;
+}
+
+.stat-bar.stat-69:after {
+  content: "69%";
+  width: 69%;
+}
+
+.stat-bar.stat-70:after {
+  content: "70%";
+  width: 70%;
+}
+
+.stat-bar.stat-71:after {
+  content: "71%";
+  width: 71%;
+}
+
+.stat-bar.stat-72:after {
+  content: "72%";
+  width: 72%;
+}
+
+.stat-bar.stat-73:after {
+  content: "73%";
+  width: 73%;
+}
+
+.stat-bar.stat-74:after {
+  content: "74%";
+  width: 74%;
+}
+
+.stat-bar.stat-75:after {
+  content: "75%";
+  width: 75%;
+}
+
+.stat-bar.stat-76:after {
+  content: "76%";
+  width: 76%;
+}
+
+.stat-bar.stat-77:after {
+  content: "77%";
+  width: 77%;
+}
+
+.stat-bar.stat-78:after {
+  content: "78%";
+  width: 78%;
+}
+
+.stat-bar.stat-79:after {
+  content: "79%";
+  width: 79%;
+}
+
+.stat-bar.stat-80:after {
+  content: "80%";
+  width: 80%;
+}
+
+.stat-bar.stat-81:after {
+  content: "81%";
+  width: 81%;
+}
+
+.stat-bar.stat-82:after {
+  content: "82%";
+  width: 82%;
+}
+
+.stat-bar.stat-83:after {
+  content: "83%";
+  width: 83%;
+}
+
+.stat-bar.stat-84:after {
+  content: "84%";
+  width: 84%;
+}
+
+.stat-bar.stat-85:after {
+  content: "85%";
+  width: 85%;
+}
+
+.stat-bar.stat-86:after {
+  content: "86%";
+  width: 86%;
+}
+
+.stat-bar.stat-87:after {
+  content: "87%";
+  width: 87%;
+}
+
+.stat-bar.stat-88:after {
+  content: "88%";
+  width: 88%;
+}
+
+.stat-bar.stat-89:after {
+  content: "89%";
+  width: 89%;
+}
+
+.stat-bar.stat-90:after {
+  content: "90%";
+  width: 90%;
+}
+
+.stat-bar.stat-91:after {
+  content: "91%";
+  width: 91%;
+}
+
+.stat-bar.stat-92:after {
+  content: "92%";
+  width: 92%;
+}
+
+.stat-bar.stat-93:after {
+  content: "93%";
+  width: 93%;
+}
+
+.stat-bar.stat-94:after {
+  content: "94%";
+  width: 94%;
+}
+
+.stat-bar.stat-95:after {
+  content: "95%";
+  width: 95%;
+}
+
+.stat-bar.stat-96:after {
+  content: "96%";
+  width: 96%;
+}
+
+.stat-bar.stat-97:after {
+  content: "97%";
+  width: 97%;
+}
+
+.stat-bar.stat-98:after {
+  content: "98%";
+  width: 98%;
+}
+
+.stat-bar.stat-99:after {
+  content: "99%";
+  width: 99%;
+}
+
+.stat-bar.stat-100:after {
+  content: "100%";
+  width: 100%;
+}
+
+@media (max-width: 579px) {
+  .card {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+@media (min-width: 580px) {
+  .card {
+    width: 540px;
+  }
+  .card .card-header {
+    width: 40%;
+  }
+  .card .card-body {
+    width: 60%;
+  }
+}
+.text-center {
+  text-align: center;
+}
+
