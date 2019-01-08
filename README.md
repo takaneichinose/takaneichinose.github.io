@@ -1,2 +1,4 @@
 # takaneichinose.github.io
-My web page.
+My personal home page.
+
+https://takaneichinose.github.io/
