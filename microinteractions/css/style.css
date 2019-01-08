@@ -1,0 +1,913 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #424242;
+}
+
+.zz-button {
+  color: white;
+  font-family: Raleway, sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  background-color: #2f8aff;
+  width: 250px;
+  height: 100px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20% / 50%;
+  transition: color 0.7s ease-in-out, font-size 0.7s ease-in-out, background-color 0.7s ease-in-out, width 0.7s ease-in-out, height 0.7s ease-in-out, border-radius 0.7s ease-in-out;
+}
+
+.zz-button:after {
+  content: '0%';
+  font-size: 0;
+  display: block;
+  transition: font-size 0.7s ease-in-out;
+}
+
+.zz-button.active {
+  font-size: 18px;
+  background-color: #085dc9;
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+}
+
+.zz-button.active:after {
+  font-size: 48px;
+}
+
+.zz-button-progress-0 {
+  background-image: linear-gradient(to top, #2f8aff 0%, #085dc9 0%);
+}
+
+.zz-button-progress-0:after {
+  content: "0%";
+}
+
+.zz-button-progress-1 {
+  background-image: linear-gradient(to top, #2f8aff 1%, #085dc9 1%);
+}
+
+.zz-button-progress-1:after {
+  content: "1%";
+}
+
+.zz-button-progress-2 {
+  background-image: linear-gradient(to top, #2f8aff 2%, #085dc9 2%);
+}
+
+.zz-button-progress-2:after {
+  content: "2%";
+}
+
+.zz-button-progress-3 {
+  background-image: linear-gradient(to top, #2f8aff 3%, #085dc9 3%);
+}
+
+.zz-button-progress-3:after {
+  content: "3%";
+}
+
+.zz-button-progress-4 {
+  background-image: linear-gradient(to top, #2f8aff 4%, #085dc9 4%);
+}
+
+.zz-button-progress-4:after {
+  content: "4%";
+}
+
+.zz-button-progress-5 {
+  background-image: linear-gradient(to top, #2f8aff 5%, #085dc9 5%);
+}
+
+.zz-button-progress-5:after {
+  content: "5%";
+}
+
+.zz-button-progress-6 {
+  background-image: linear-gradient(to top, #2f8aff 6%, #085dc9 6%);
+}
+
+.zz-button-progress-6:after {
+  content: "6%";
+}
+
+.zz-button-progress-7 {
+  background-image: linear-gradient(to top, #2f8aff 7%, #085dc9 7%);
+}
+
+.zz-button-progress-7:after {
+  content: "7%";
+}
+
+.zz-button-progress-8 {
+  background-image: linear-gradient(to top, #2f8aff 8%, #085dc9 8%);
+}
+
+.zz-button-progress-8:after {
+  content: "8%";
+}
+
+.zz-button-progress-9 {
+  background-image: linear-gradient(to top, #2f8aff 9%, #085dc9 9%);
+}
+
+.zz-button-progress-9:after {
+  content: "9%";
+}
+
+.zz-button-progress-10 {
+  background-image: linear-gradient(to top, #2f8aff 10%, #085dc9 10%);
+}
+
+.zz-button-progress-10:after {
+  content: "10%";
+}
+
+.zz-button-progress-11 {
+  background-image: linear-gradient(to top, #2f8aff 11%, #085dc9 11%);
+}
+
+.zz-button-progress-11:after {
+  content: "11%";
+}
+
+.zz-button-progress-12 {
+  background-image: linear-gradient(to top, #2f8aff 12%, #085dc9 12%);
+}
+
+.zz-button-progress-12:after {
+  content: "12%";
+}
+
+.zz-button-progress-13 {
+  background-image: linear-gradient(to top, #2f8aff 13%, #085dc9 13%);
+}
+
+.zz-button-progress-13:after {
+  content: "13%";
+}
+
+.zz-button-progress-14 {
+  background-image: linear-gradient(to top, #2f8aff 14%, #085dc9 14%);
+}
+
+.zz-button-progress-14:after {
+  content: "14%";
+}
+
+.zz-button-progress-15 {
+  background-image: linear-gradient(to top, #2f8aff 15%, #085dc9 15%);
+}
+
+.zz-button-progress-15:after {
+  content: "15%";
+}
+
+.zz-button-progress-16 {
+  background-image: linear-gradient(to top, #2f8aff 16%, #085dc9 16%);
+}
+
+.zz-button-progress-16:after {
+  content: "16%";
+}
+
+.zz-button-progress-17 {
+  background-image: linear-gradient(to top, #2f8aff 17%, #085dc9 17%);
+}
+
+.zz-button-progress-17:after {
+  content: "17%";
+}
+
+.zz-button-progress-18 {
+  background-image: linear-gradient(to top, #2f8aff 18%, #085dc9 18%);
+}
+
+.zz-button-progress-18:after {
+  content: "18%";
+}
+
+.zz-button-progress-19 {
+  background-image: linear-gradient(to top, #2f8aff 19%, #085dc9 19%);
+}
+
+.zz-button-progress-19:after {
+  content: "19%";
+}
+
+.zz-button-progress-20 {
+  background-image: linear-gradient(to top, #2f8aff 20%, #085dc9 20%);
+}
+
+.zz-button-progress-20:after {
+  content: "20%";
+}
+
+.zz-button-progress-21 {
+  background-image: linear-gradient(to top, #2f8aff 21%, #085dc9 21%);
+}
+
+.zz-button-progress-21:after {
+  content: "21%";
+}
+
+.zz-button-progress-22 {
+  background-image: linear-gradient(to top, #2f8aff 22%, #085dc9 22%);
+}
+
+.zz-button-progress-22:after {
+  content: "22%";
+}
+
+.zz-button-progress-23 {
+  background-image: linear-gradient(to top, #2f8aff 23%, #085dc9 23%);
+}
+
+.zz-button-progress-23:after {
+  content: "23%";
+}
+
+.zz-button-progress-24 {
+  background-image: linear-gradient(to top, #2f8aff 24%, #085dc9 24%);
+}
+
+.zz-button-progress-24:after {
+  content: "24%";
+}
+
+.zz-button-progress-25 {
+  background-image: linear-gradient(to top, #2f8aff 25%, #085dc9 25%);
+}
+
+.zz-button-progress-25:after {
+  content: "25%";
+}
+
+.zz-button-progress-26 {
+  background-image: linear-gradient(to top, #2f8aff 26%, #085dc9 26%);
+}
+
+.zz-button-progress-26:after {
+  content: "26%";
+}
+
+.zz-button-progress-27 {
+  background-image: linear-gradient(to top, #2f8aff 27%, #085dc9 27%);
+}
+
+.zz-button-progress-27:after {
+  content: "27%";
+}
+
+.zz-button-progress-28 {
+  background-image: linear-gradient(to top, #2f8aff 28%, #085dc9 28%);
+}
+
+.zz-button-progress-28:after {
+  content: "28%";
+}
+
+.zz-button-progress-29 {
+  background-image: linear-gradient(to top, #2f8aff 29%, #085dc9 29%);
+}
+
+.zz-button-progress-29:after {
+  content: "29%";
+}
+
+.zz-button-progress-30 {
+  background-image: linear-gradient(to top, #2f8aff 30%, #085dc9 30%);
+}
+
+.zz-button-progress-30:after {
+  content: "30%";
+}
+
+.zz-button-progress-31 {
+  background-image: linear-gradient(to top, #2f8aff 31%, #085dc9 31%);
+}
+
+.zz-button-progress-31:after {
+  content: "31%";
+}
+
+.zz-button-progress-32 {
+  background-image: linear-gradient(to top, #2f8aff 32%, #085dc9 32%);
+}
+
+.zz-button-progress-32:after {
+  content: "32%";
+}
+
+.zz-button-progress-33 {
+  background-image: linear-gradient(to top, #2f8aff 33%, #085dc9 33%);
+}
+
+.zz-button-progress-33:after {
+  content: "33%";
+}
+
+.zz-button-progress-34 {
+  background-image: linear-gradient(to top, #2f8aff 34%, #085dc9 34%);
+}
+
+.zz-button-progress-34:after {
+  content: "34%";
+}
+
+.zz-button-progress-35 {
+  background-image: linear-gradient(to top, #2f8aff 35%, #085dc9 35%);
+}
+
+.zz-button-progress-35:after {
+  content: "35%";
+}
+
+.zz-button-progress-36 {
+  background-image: linear-gradient(to top, #2f8aff 36%, #085dc9 36%);
+}
+
+.zz-button-progress-36:after {
+  content: "36%";
+}
+
+.zz-button-progress-37 {
+  background-image: linear-gradient(to top, #2f8aff 37%, #085dc9 37%);
+}
+
+.zz-button-progress-37:after {
+  content: "37%";
+}
+
+.zz-button-progress-38 {
+  background-image: linear-gradient(to top, #2f8aff 38%, #085dc9 38%);
+}
+
+.zz-button-progress-38:after {
+  content: "38%";
+}
+
+.zz-button-progress-39 {
+  background-image: linear-gradient(to top, #2f8aff 39%, #085dc9 39%);
+}
+
+.zz-button-progress-39:after {
+  content: "39%";
+}
+
+.zz-button-progress-40 {
+  background-image: linear-gradient(to top, #2f8aff 40%, #085dc9 40%);
+}
+
+.zz-button-progress-40:after {
+  content: "40%";
+}
+
+.zz-button-progress-41 {
+  background-image: linear-gradient(to top, #2f8aff 41%, #085dc9 41%);
+}
+
+.zz-button-progress-41:after {
+  content: "41%";
+}
+
+.zz-button-progress-42 {
+  background-image: linear-gradient(to top, #2f8aff 42%, #085dc9 42%);
+}
+
+.zz-button-progress-42:after {
+  content: "42%";
+}
+
+.zz-button-progress-43 {
+  background-image: linear-gradient(to top, #2f8aff 43%, #085dc9 43%);
+}
+
+.zz-button-progress-43:after {
+  content: "43%";
+}
+
+.zz-button-progress-44 {
+  background-image: linear-gradient(to top, #2f8aff 44%, #085dc9 44%);
+}
+
+.zz-button-progress-44:after {
+  content: "44%";
+}
+
+.zz-button-progress-45 {
+  background-image: linear-gradient(to top, #2f8aff 45%, #085dc9 45%);
+}
+
+.zz-button-progress-45:after {
+  content: "45%";
+}
+
+.zz-button-progress-46 {
+  background-image: linear-gradient(to top, #2f8aff 46%, #085dc9 46%);
+}
+
+.zz-button-progress-46:after {
+  content: "46%";
+}
+
+.zz-button-progress-47 {
+  background-image: linear-gradient(to top, #2f8aff 47%, #085dc9 47%);
+}
+
+.zz-button-progress-47:after {
+  content: "47%";
+}
+
+.zz-button-progress-48 {
+  background-image: linear-gradient(to top, #2f8aff 48%, #085dc9 48%);
+}
+
+.zz-button-progress-48:after {
+  content: "48%";
+}
+
+.zz-button-progress-49 {
+  background-image: linear-gradient(to top, #2f8aff 49%, #085dc9 49%);
+}
+
+.zz-button-progress-49:after {
+  content: "49%";
+}
+
+.zz-button-progress-50 {
+  background-image: linear-gradient(to top, #2f8aff 50%, #085dc9 50%);
+}
+
+.zz-button-progress-50:after {
+  content: "50%";
+}
+
+.zz-button-progress-51 {
+  background-image: linear-gradient(to top, #2f8aff 51%, #085dc9 51%);
+}
+
+.zz-button-progress-51:after {
+  content: "51%";
+}
+
+.zz-button-progress-52 {
+  background-image: linear-gradient(to top, #2f8aff 52%, #085dc9 52%);
+}
+
+.zz-button-progress-52:after {
+  content: "52%";
+}
+
+.zz-button-progress-53 {
+  background-image: linear-gradient(to top, #2f8aff 53%, #085dc9 53%);
+}
+
+.zz-button-progress-53:after {
+  content: "53%";
+}
+
+.zz-button-progress-54 {
+  background-image: linear-gradient(to top, #2f8aff 54%, #085dc9 54%);
+}
+
+.zz-button-progress-54:after {
+  content: "54%";
+}
+
+.zz-button-progress-55 {
+  background-image: linear-gradient(to top, #2f8aff 55%, #085dc9 55%);
+}
+
+.zz-button-progress-55:after {
+  content: "55%";
+}
+
+.zz-button-progress-56 {
+  background-image: linear-gradient(to top, #2f8aff 56%, #085dc9 56%);
+}
+
+.zz-button-progress-56:after {
+  content: "56%";
+}
+
+.zz-button-progress-57 {
+  background-image: linear-gradient(to top, #2f8aff 57%, #085dc9 57%);
+}
+
+.zz-button-progress-57:after {
+  content: "57%";
+}
+
+.zz-button-progress-58 {
+  background-image: linear-gradient(to top, #2f8aff 58%, #085dc9 58%);
+}
+
+.zz-button-progress-58:after {
+  content: "58%";
+}
+
+.zz-button-progress-59 {
+  background-image: linear-gradient(to top, #2f8aff 59%, #085dc9 59%);
+}
+
+.zz-button-progress-59:after {
+  content: "59%";
+}
+
+.zz-button-progress-60 {
+  background-image: linear-gradient(to top, #2f8aff 60%, #085dc9 60%);
+}
+
+.zz-button-progress-60:after {
+  content: "60%";
+}
+
+.zz-button-progress-61 {
+  background-image: linear-gradient(to top, #2f8aff 61%, #085dc9 61%);
+}
+
+.zz-button-progress-61:after {
+  content: "61%";
+}
+
+.zz-button-progress-62 {
+  background-image: linear-gradient(to top, #2f8aff 62%, #085dc9 62%);
+}
+
+.zz-button-progress-62:after {
+  content: "62%";
+}
+
+.zz-button-progress-63 {
+  background-image: linear-gradient(to top, #2f8aff 63%, #085dc9 63%);
+}
+
+.zz-button-progress-63:after {
+  content: "63%";
+}
+
+.zz-button-progress-64 {
+  background-image: linear-gradient(to top, #2f8aff 64%, #085dc9 64%);
+}
+
+.zz-button-progress-64:after {
+  content: "64%";
+}
+
+.zz-button-progress-65 {
+  background-image: linear-gradient(to top, #2f8aff 65%, #085dc9 65%);
+}
+
+.zz-button-progress-65:after {
+  content: "65%";
+}
+
+.zz-button-progress-66 {
+  background-image: linear-gradient(to top, #2f8aff 66%, #085dc9 66%);
+}
+
+.zz-button-progress-66:after {
+  content: "66%";
+}
+
+.zz-button-progress-67 {
+  background-image: linear-gradient(to top, #2f8aff 67%, #085dc9 67%);
+}
+
+.zz-button-progress-67:after {
+  content: "67%";
+}
+
+.zz-button-progress-68 {
+  background-image: linear-gradient(to top, #2f8aff 68%, #085dc9 68%);
+}
+
+.zz-button-progress-68:after {
+  content: "68%";
+}
+
+.zz-button-progress-69 {
+  background-image: linear-gradient(to top, #2f8aff 69%, #085dc9 69%);
+}
+
+.zz-button-progress-69:after {
+  content: "69%";
+}
+
+.zz-button-progress-70 {
+  background-image: linear-gradient(to top, #2f8aff 70%, #085dc9 70%);
+}
+
+.zz-button-progress-70:after {
+  content: "70%";
+}
+
+.zz-button-progress-71 {
+  background-image: linear-gradient(to top, #2f8aff 71%, #085dc9 71%);
+}
+
+.zz-button-progress-71:after {
+  content: "71%";
+}
+
+.zz-button-progress-72 {
+  background-image: linear-gradient(to top, #2f8aff 72%, #085dc9 72%);
+}
+
+.zz-button-progress-72:after {
+  content: "72%";
+}
+
+.zz-button-progress-73 {
+  background-image: linear-gradient(to top, #2f8aff 73%, #085dc9 73%);
+}
+
+.zz-button-progress-73:after {
+  content: "73%";
+}
+
+.zz-button-progress-74 {
+  background-image: linear-gradient(to top, #2f8aff 74%, #085dc9 74%);
+}
+
+.zz-button-progress-74:after {
+  content: "74%";
+}
+
+.zz-button-progress-75 {
+  background-image: linear-gradient(to top, #2f8aff 75%, #085dc9 75%);
+}
+
+.zz-button-progress-75:after {
+  content: "75%";
+}
+
+.zz-button-progress-76 {
+  background-image: linear-gradient(to top, #2f8aff 76%, #085dc9 76%);
+}
+
+.zz-button-progress-76:after {
+  content: "76%";
+}
+
+.zz-button-progress-77 {
+  background-image: linear-gradient(to top, #2f8aff 77%, #085dc9 77%);
+}
+
+.zz-button-progress-77:after {
+  content: "77%";
+}
+
+.zz-button-progress-78 {
+  background-image: linear-gradient(to top, #2f8aff 78%, #085dc9 78%);
+}
+
+.zz-button-progress-78:after {
+  content: "78%";
+}
+
+.zz-button-progress-79 {
+  background-image: linear-gradient(to top, #2f8aff 79%, #085dc9 79%);
+}
+
+.zz-button-progress-79:after {
+  content: "79%";
+}
+
+.zz-button-progress-80 {
+  background-image: linear-gradient(to top, #2f8aff 80%, #085dc9 80%);
+}
+
+.zz-button-progress-80:after {
+  content: "80%";
+}
+
+.zz-button-progress-81 {
+  background-image: linear-gradient(to top, #2f8aff 81%, #085dc9 81%);
+}
+
+.zz-button-progress-81:after {
+  content: "81%";
+}
+
+.zz-button-progress-82 {
+  background-image: linear-gradient(to top, #2f8aff 82%, #085dc9 82%);
+}
+
+.zz-button-progress-82:after {
+  content: "82%";
+}
+
+.zz-button-progress-83 {
+  background-image: linear-gradient(to top, #2f8aff 83%, #085dc9 83%);
+}
+
+.zz-button-progress-83:after {
+  content: "83%";
+}
+
+.zz-button-progress-84 {
+  background-image: linear-gradient(to top, #2f8aff 84%, #085dc9 84%);
+}
+
+.zz-button-progress-84:after {
+  content: "84%";
+}
+
+.zz-button-progress-85 {
+  background-image: linear-gradient(to top, #2f8aff 85%, #085dc9 85%);
+}
+
+.zz-button-progress-85:after {
+  content: "85%";
+}
+
+.zz-button-progress-86 {
+  background-image: linear-gradient(to top, #2f8aff 86%, #085dc9 86%);
+}
+
+.zz-button-progress-86:after {
+  content: "86%";
+}
+
+.zz-button-progress-87 {
+  background-image: linear-gradient(to top, #2f8aff 87%, #085dc9 87%);
+}
+
+.zz-button-progress-87:after {
+  content: "87%";
+}
+
+.zz-button-progress-88 {
+  background-image: linear-gradient(to top, #2f8aff 88%, #085dc9 88%);
+}
+
+.zz-button-progress-88:after {
+  content: "88%";
+}
+
+.zz-button-progress-89 {
+  background-image: linear-gradient(to top, #2f8aff 89%, #085dc9 89%);
+}
+
+.zz-button-progress-89:after {
+  content: "89%";
+}
+
+.zz-button-progress-90 {
+  background-image: linear-gradient(to top, #2f8aff 90%, #085dc9 90%);
+}
+
+.zz-button-progress-90:after {
+  content: "90%";
+}
+
+.zz-button-progress-91 {
+  background-image: linear-gradient(to top, #2f8aff 91%, #085dc9 91%);
+}
+
+.zz-button-progress-91:after {
+  content: "91%";
+}
+
+.zz-button-progress-92 {
+  background-image: linear-gradient(to top, #2f8aff 92%, #085dc9 92%);
+}
+
+.zz-button-progress-92:after {
+  content: "92%";
+}
+
+.zz-button-progress-93 {
+  background-image: linear-gradient(to top, #2f8aff 93%, #085dc9 93%);
+}
+
+.zz-button-progress-93:after {
+  content: "93%";
+}
+
+.zz-button-progress-94 {
+  background-image: linear-gradient(to top, #2f8aff 94%, #085dc9 94%);
+}
+
+.zz-button-progress-94:after {
+  content: "94%";
+}
+
+.zz-button-progress-95 {
+  background-image: linear-gradient(to top, #2f8aff 95%, #085dc9 95%);
+}
+
+.zz-button-progress-95:after {
+  content: "95%";
+}
+
+.zz-button-progress-96 {
+  background-image: linear-gradient(to top, #2f8aff 96%, #085dc9 96%);
+}
+
+.zz-button-progress-96:after {
+  content: "96%";
+}
+
+.zz-button-progress-97 {
+  background-image: linear-gradient(to top, #2f8aff 97%, #085dc9 97%);
+}
+
+.zz-button-progress-97:after {
+  content: "97%";
+}
+
+.zz-button-progress-98 {
+  background-image: linear-gradient(to top, #2f8aff 98%, #085dc9 98%);
+}
+
+.zz-button-progress-98:after {
+  content: "98%";
+}
+
+.zz-button-progress-99 {
+  background-image: linear-gradient(to top, #2f8aff 99%, #085dc9 99%);
+}
+
+.zz-button-progress-99:after {
+  content: "99%";
+}
+
+.zz-button-progress-100 {
+  background-image: linear-gradient(to top, #2f8aff 100%, #085dc9 100%);
+}
+
+.zz-button-progress-100:after {
+  content: "100%";
+}
+
+.zz-button-progress-100 {
+  animation: progress-done-pre 0.7s ease-out;
+}
+
+@keyframes progress-done-pre {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.zz-button-progress-done {
+  color: transparent;
+  background-color: #52b500;
+  position: relative;
+}
+
+.zz-button-progress-done:before {
+  content: '';
+  width: 0px;
+  height: 0px;
+  display: block;
+}
+
+.zz-button-progress-done.zz-button-progress-done-active:before {
+  width: 50px;
+  height: 20px;
+  border: solid 10px white;
+  border-top: none;
+  border-right: none;
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  transform: rotate(-45deg);
+  transform-origin: top left;
+  animation: progress-done-post 0.7s;
+}
+
+@keyframes progress-done-post {
+  0% {
+    width: 0px;
+    height: 0px;
+  }
+  50% {
+    width: 0px;
+    height: 20px;
+  }
+  100% {
+    width: 50px;
+    height: 20px;
+  }
+}
+
