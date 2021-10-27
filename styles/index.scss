@@ -1,0 +1,56 @@
+////////////////////////////////////////////////////////////////////////////////
+// CSS Styles                                                                 //
+////////////////////////////////////////////////////////////////////////////////
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+img {
+	vertical-align: middle;
+}
+
+#app {
+	background-color: #000000;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+}
+
+// TODO: Uncomment this
+// @media screen and (min-width: $max-screen-width) {
+// 	.main-screen {
+// 		width: $max-screen-width;
+// 		height: $max-screen-height;
+// 	}
+
+// 	.main-menu {
+// 		width: $max-screen-width;
+// 		height: $max-screen-height;
+// 	}
+
+// 	.speech-dialog {
+// 		width: $max-screen-width;
+// 		height: $max-screen-height / 2;
+// 	}
+// }
+
+////////////////////////////////////////////////////////////////////////////////
+// Components CSS imports                                                     //
+////////////////////////////////////////////////////////////////////////////////
+
+// Components
+@import "./components/Acknowledgement.scss";
+@import "./components/Character.scss";
+@import "./components/Instructions.scss";
+@import "./components/LoadingScreen.scss";
+@import "./components/MainMenu.scss";
+@import "./components/MenuItem.scss";
+@import "./components/MyProfile.scss";
+@import "./components/Objects.scss";
+@import "./components/Spacer.scss";
+@import "./components/SpeechDialog.scss";
+@import "./components/StatsWindow.scss";
+@import "./components/Text.scss";

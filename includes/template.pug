@@ -1,0 +1,19 @@
+//----------------------------------------------------------------------------//
+//-                          TEMPLATE OF THE MARKUP                          -//
+//----------------------------------------------------------------------------//
+
+doctype html
+html(lang=lang)
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		meta(name="description" content=description)
+		title Takane Ichinose | Personal Profile
+		link(rel="stylesheet" href="./styles/index.processed.css")
+		script.
+			console.clear();
+	body
+		#app
+		script.
+			const systemLanguage = "#{lang}";
+		script(type="module" src="./scripts/index.processed.js")

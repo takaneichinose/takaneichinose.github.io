@@ -1,0 +1,67 @@
+////////////////////////////////////////////////////////////////////////////////
+// Stats Window CSS Style                                                     //
+////////////////////////////////////////////////////////////////////////////////
+
+// Basic imports
+@import "../definition.scss";
+@import "../mixins.scss";
+
+.stats-window {
+	--background-width: 0;
+	--background-height: 0;
+	@include fade("stats-window", true);
+	@include obj(null, 0, 0, $main-menu-z-index);
+	// FIXME: I'm still going to decide if I will put this or not.
+	// background-image: var(--background-image);
+	// background-size: var(--background-width) var(--background-height);
+	// background-repeat: repeat;
+	width: $screen-width;
+	height: $screen-height;
+	display: flex;
+	top: 0;
+	left: 0;
+	// FIXME: I'm still going to decide if I will put this or not.
+	// animation: stats-window-background-image 1024ms linear infinite;
+	// @keyframes stats-window-background-image {
+	// 	0% {
+	// 		background-position: 0px 0px;
+	// 	}
+	// 	100% {
+	// 		background-position:
+	// 			calc(var(--background-width) * -1)
+	// 			calc(var(--background-height) * -1);
+	// 	}
+	// }
+}
+
+.stats-image,
+.stats-title,
+.stats-description {
+	--padding: 0;
+	// background-image: var(--background-image);
+	// background-size: var(--width) var(--height);
+	// background-repeat: no-repeat;
+	background-image: var(--background-image);
+	background-size: var(--width) var(--height);
+	background-repeat: repeat;
+	width: var(--width);
+	height: var(--height);
+	padding: var(--padding);
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	position: absolute;
+	top: var(--y);
+	left: var(--x);
+}
+
+.stats-description {
+	display: flex;
+	flex-direction: row;
+}
+
+.stats-description-details {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}

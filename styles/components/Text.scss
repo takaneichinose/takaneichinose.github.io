@@ -1,0 +1,39 @@
+////////////////////////////////////////////////////////////////////////////////
+// Text CSS Style                                                             //
+////////////////////////////////////////////////////////////////////////////////
+
+// Basic imports
+@import "../definition.scss";
+@import "../mixins.scss";
+
+.sentence,
+.dialog-confirm-button {
+	display: inline-flex;
+	flex-wrap: wrap;
+}
+
+.word {
+	--space: 0;
+	margin-right: var(--space);
+	display: inline-flex;
+	flex-wrap: nowrap;
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.text {
+	--background-position: 0;
+	--background-size: 0;
+	--width: 0;
+	--height: 0;
+	background-image: var(--background-image);
+	background-position: var(--background-position);
+	background-size: var(--background-size);
+	width: var(--width);
+	height: var(--height);
+	// image-rendering: crisp-edges;
+	&:last-child {
+		margin-right: 0;
+	}
+}

@@ -1,0 +1,61 @@
+////////////////////////////////////////////////////////////////////////////////
+// Speech Dialog CSS Style                                                    //
+////////////////////////////////////////////////////////////////////////////////
+
+// Basic imports
+@import "../definition.scss";
+@import "../mixins.scss";
+
+.speech-dialog {
+	@include fade("speech-dialog", true);
+	@include obj(null, 0, 0, $speech-dialog-z-index);
+	width: $screen-width;
+	height: $screen-height;
+}
+
+.speech-dialog-box {
+	--padding: 0;
+	background-image: var(--background-image);
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 50%;
+	padding: var(--padding);
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	position: absolute;
+	bottom: 0;
+}
+
+.dialog-confirm {
+	margin-top: auto;
+	display: inline-flex;
+	align-self: flex-end;
+}
+
+.dialog-confirm-button {
+	--selector-background-image: "";
+	--margin-right: 0;
+	background-color: transparent;
+	border: 0;
+	padding: 0;
+	outline: 0;
+	position: relative;
+	&::before {
+		content: "";
+		background-image: var(--selector-background-image);
+		background-size: cover;
+		background-position: center;
+		width: var(--width);
+		height: var(--height);
+		position: absolute;
+		left: calc(var(--width) * -1);
+		opacity: 0;
+		transition: opacity 64ms ease-out;
+	}
+}
+
+.dialog-confirm-button:hover::before {
+	opacity: 1;
+}

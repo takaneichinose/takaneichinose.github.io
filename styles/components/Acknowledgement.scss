@@ -1,0 +1,31 @@
+////////////////////////////////////////////////////////////////////////////////
+// Acknowledgement CSS Style                                                  //
+////////////////////////////////////////////////////////////////////////////////
+
+// Basic imports
+@import "../definition.scss";
+@import "../mixins.scss";
+
+.acknowledgement {
+	@include fade("acknowledgement", true);
+	@include obj(null, 0, 0, $main-menu-z-index);
+	width: $screen-width;
+	height: $screen-height;
+	display: flex;
+	top: 0;
+	left: 0;
+}
+
+.acknowledgement-dialog {
+	--background-width: 0;
+	--background-height: 0;
+	--padding: 0;
+	background-image: var(--background-image);
+	background-size: var(--width) var(--height);
+	width: var(--width);
+	height: var(--height);
+	padding: var(--padding);
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}

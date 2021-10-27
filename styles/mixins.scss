@@ -1,0 +1,80 @@
+////////////////////////////////////////////////////////////////////////////////
+// Sass Mixins                                                                //
+////////////////////////////////////////////////////////////////////////////////
+
+// Fade animation of an item
+@mixin fade($name, $is-fade-in) {
+	$fade-in-text: "-fade-in";
+	$fade-out-text: "-fade-out";
+	
+	&.#{$name + $fade-out-text} {
+		animation: #{$name + $fade-out-text} $display-time ease-out;
+		@keyframes #{$name + $fade-out-text} {
+			0% {
+				opacity: 1;
+			}
+			100% {
+				opacity: 0;
+			}
+		}
+	}
+	@if ($is-fade-in) {
+		animation: #{$name + $fade-in-text} $display-time ease-out;
+		@keyframes #{$name + $fade-in-text} {
+			0% {
+				opacity: 0;
+			}
+			100% {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+// Object displayed on the screen
+@mixin obj($img, $x, $y, $z) {
+	--width: 0;
+	--height: 0;
+	--x: #{$x};
+	--y: #{$y};
+	--z: #{$z};
+	@if ($img != null) {
+		background-size: cover;
+		background-repeat: no-repeat;
+		// image-rendering: crisp-edges;
+	}
+	position: absolute;
+	top: var(--y);
+	left: var(--x);
+	z-index: var(--z);
+	@if ($img == null) {
+		display: flex;
+		& > img {
+			--width: inherit;
+			--height: inherit;
+			width: 100%;
+			// image-rendering: crisp-edges;
+			position: absolute;
+			bottom: 0;
+		}
+	}
+}
+
+// Mixin for objects, character, or interactables
+@mixin object() {
+	@include obj(null, 0, 0, 0);
+	width: var(--width);
+	height: var(--height);
+	transition: transform 128ms ease-out;
+	&.hoverable:hover {
+		z-index: $object-hover-z-index;
+		cursor: pointer;
+		transform: scale(1.5);
+	}
+	&.non-clickable {
+		pointer-events: none;
+	}
+	@if ($debug-object) {
+		background-color: red;
+	}
+}

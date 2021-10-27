@@ -1,0 +1,14 @@
+////////////////////////////////////////////////////////////////////////////////
+// Loading Screen CSS Style                                                   //
+////////////////////////////////////////////////////////////////////////////////
+
+// Basic imports
+@import "../definition.scss";
+@import "../mixins.scss";
+
+.instructions {
+	@include fade("instructions", false);
+	@include obj(null, 0px, 0px, $instructions-z-index);
+	width: 100%;
+	height: 100%;
+}

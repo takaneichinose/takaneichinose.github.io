@@ -1,0 +1,16 @@
+////////////////////////////////////////////////////////////////////////////////
+// Loading Screen CSS Style                                                   //
+////////////////////////////////////////////////////////////////////////////////
+
+// Basic imports
+@import "../definition.scss";
+@import "../mixins.scss";
+
+.character {
+	@include object();
+	pointer-events: none;
+}
+
+.character-animating {
+	transition: top var(--move-time) linear, left var(--move-time) linear;
+}
